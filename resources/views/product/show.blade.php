@@ -21,9 +21,11 @@
           @endif
           
         </h5>
-        <p class="card-text">{{ $viewData["product"]["description"] }}</p>
-        <span>$</span>
-        <span class="card-text">{{ $viewData["product"]["price"] }}</span> 
+        <p class="card-text">{{ $viewData["product"]["price"] }}</p>
+
+        @foreach($viewData["product"]->comments as $comment)
+        - {{ $comment->getDescription() }}<br />
+        @endforeach
       </div>
     </div>
   </div>
