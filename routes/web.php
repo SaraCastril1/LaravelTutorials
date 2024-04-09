@@ -43,3 +43,15 @@ Route::post('/image/save', 'App\Http\Controllers\ImageController@save')->name("i
 
 Route::get('/image-not-di', 'App\Http\Controllers\ImageNotDIController@index')->name("imagenotdi.index");
 Route::post('/image-not-di/save', 'App\Http\Controllers\ImageNotDIController@save')->name("imagenotdi.save");
+
+
+// PARCIAL 1 -----------------------------------------------------------------------
+
+Route::get('/worms', 'App\Http\Controllers\WormController@index')->name('worm.index');
+Route::get('/worms/register', 'App\Http\Controllers\WormController@register')->name('worm.register');
+Route::post('/worms/register', 'App\Http\Controllers\WormController@store')->name('worm.store');
+
+Route::get('/worms/list', 'App\Http\Controllers\WormController@list')->name('worm.list');
+
+Route::get('/worms/stadistics', 'App\Http\Controllers\WormController@stadistics')->name('worm.stadistics');
+

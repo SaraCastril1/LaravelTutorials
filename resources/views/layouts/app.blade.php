@@ -23,6 +23,7 @@
           <a class="nav-link active" href="{{ route('home.contact') }}">Contact</a>
           <a class="nav-link active" href="{{ route('product.index') }}">Products</a>
           <a class="nav-link active" href="{{ route('product.create') }}">Create Product</a>
+          <a class="nav-link active" href="{{ route('worm.index') }}">Parcial 1</a>
           
           
         </div>

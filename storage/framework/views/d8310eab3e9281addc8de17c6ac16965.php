@@ -23,6 +23,7 @@
           <a class="nav-link active" href="<?php echo e(route('home.contact')); ?>">Contact</a>
           <a class="nav-link active" href="<?php echo e(route('product.index')); ?>">Products</a>
           <a class="nav-link active" href="<?php echo e(route('product.create')); ?>">Create Product</a>
+          <a class="nav-link active" href="<?php echo e(route('worm.index')); ?>">Parcial 1</a>
           
           
         </div>

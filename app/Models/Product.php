@@ -20,6 +20,16 @@ class Product extends Model
      */
     protected $fillable = ['name', 'price'];
 
+    
+
+    public static function validate($request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'price' => 'required|numeric|gt:0',
+        ]);
+    }
+
     public function getId(): int
     {
         return $this->attributes['id'];
